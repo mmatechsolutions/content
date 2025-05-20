@@ -1,0 +1,190 @@
+
+
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+
+    }
+
+     h2 {
+      margin-bottom: 10px;
+    }
+
+    header{
+        height: 400px;
+        margin: 0;
+        padding: 12px;
+        color: white;
+        background-color: aquamarine;
+        background-image: url('image3.jpg');
+        background-size:cover;           
+        background-position: center;     
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation: fade-in-bg 3s ease forwards;
+    }
+
+    @keyframes fade-in-bg {
+        0%{
+            opacity: 0.2;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    #header{
+         opacity: 0;
+        transform: translateY(30px);
+        animation: fade-slide-up 1.5s ease-out forwards;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes fade-slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: aqua;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    #about{
+        height: 250px;
+        text-align: center;
+        padding: 12px;
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background: linear-gradient(to right, transparent, white, transparent);
+        width: 80%;
+        margin: 40px auto;
+}
+
+    #services{
+        height: 250px;
+        text-align: center;
+        padding: 12px;
+    }
+
+     .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .services li {
+      margin-bottom: 10px;
+    }
+
+ 
+
+        #portfolio{
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+            flex-direction: column;
+            text-align: center;
+            background-size:cover;           
+            background-position: center;     
+            background-repeat: no-repeat;
+            animation: slideshow 12s infinite;
+        }
+
+         @keyframes slideshow {
+            0%   { background-image: url('image1.jpg'); }
+            25%  { background-image: url('image2.jpg'); }
+            50%  { background-image: url('image3.jpg'); }
+            75%  { background-image: url('image4.jpg'); }
+            100% { background-image: url('image5.jpg'); }
+        }
+
+        #port{
+            width: 70%;
+            color: aqua;
+        }
+
+        #why-choose-us{
+            height: 250px;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        #why-choose-us ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+         #why-choose-us li{
+            list-style-type: none;
+            padding: 8px;
+            border: 1px solid;
+            width: 20%;
+            margin: 12px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 180px;
+            background-color: rgb(42, 80, 80);
+            color: aliceblue;
+            
+
+         }
+          #why-choose-us h2{
+            text-decoration: underline;
+          }
+    
+   
+   .contact-info {
+  background-color: #111; /* dark background */
+  color: #f5f5f5;          /* light text for contrast */
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  position: relative;
+  animation: fade-up 1s ease-out forwards;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    footer {
+      text-align: center;
+      background-color: #000000;
+      color: wheat;
+      padding: 20px;
+    }
+
