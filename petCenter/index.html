@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paws & Whiskers Pet Center</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Paws & Whiskers</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Own A Pet</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <h1>We Treat Pets Like Family</h1>
+    <p>Your one-stop pet care center for grooming, boarding, and love.</p>
+  </header>
+  <div class="pet-carousel">
+  <div id="petGallery" class="pet-gallery">
+    <!-- Images will be injected here by JS -->
+  </div>
+</div>
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Pet Grooming:</strong> From baths to nail trimming, we keep your pets looking their best.</li>
+      <li><strong>Veterinary Checkups:</strong> Regular exams to ensure your pets stay healthy.</li>
+      <li><strong>Pet Boarding:</strong> Safe and cozy overnight stays with caring professionals.</li>
+      <li><strong>Adoption Services:</strong> Find your perfect furry companion with our help.</li>
+    </ul>
+  </section>
+
+  <!-- Adoption Form Section -->
+<section id="testimonials" class="section">
+  <h2>Adoption Application</h2>
+  <form id="adoptionForm">
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="petType">Preferred Pet Type:</label><br>
+    <select id="petType" name="petType" required>
+      <option value="">--Select--</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="message">Why do you want to adopt a pet?</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +254 712 345678</p>
+    <p><strong>Email:</strong> info@pawswhiskers.co.ke</p>
+    <p><strong>Location:</strong> Nairobi | Kisumu | Mombasa</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Paws & Whiskers Pet Center. All rights reserved.</p>
+  </footer>
+
+  <script>
+  const imageUrls = [
+    "img1.jpg",
+    "img2.jpg",
+    "img3.jpg",
+    "img4.jpg",
+    "img5.jpg",
+    "img6.jpg",
+    "img7.jpg",
+    "img8.jpg",
+    "img9.jpg",
+    "img10.jpg",
+    "img11.jpg",
+    "img12.jpg",
+    
+  ];
+
+  let startIndex = 0;
+  const imagesPerSet = 4;
+  const gallery = document.getElementById("petGallery");
+
+  function renderImages() {
+    gallery.innerHTML = '';
+    for (let i = 0; i < imagesPerSet; i++) {
+      const img = document.createElement("img");
+      const currentIndex = (startIndex + i) % imageUrls.length;
+      img.src = imageUrls[currentIndex];
+      img.alt = `Pet ${currentIndex + 1}`;
+      gallery.appendChild(img);
+    }
+  }
+
+  renderImages();
+  setInterval(() => {
+    startIndex = (startIndex + imagesPerSet) % imageUrls.length;
+    renderImages();
+  }, 3000);
+</script>
+
+
+</body>
+</html>
