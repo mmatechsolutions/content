@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StarFlix Theatres</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <h1>StarFlix Theatres</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Booked Tickets</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Layout with Sidebar and Main Content -->
+  <div class="layout">
+
+    <!-- Sidebar for Upcoming Movies -->
+    <aside class="sidebar">
+      <h3>Upcoming Movies</h3>
+      <ul>
+        <li>Deadpool 3</li>
+        <li>Inside Out 2</li>
+        <li>Gladiator II</li>
+        <li>The Batman: Part II</li>
+        <li>Dune: Part Two</li>
+      </ul>
+    </aside>
+
+    <!-- Main Movie Listings -->
+    <div class="container">
+      <h2>Now Showing</h2>
+
+      <div class="movie-listing">
+
+        <!-- Movie 1 -->
+        <div class="movie">
+          <img src="infinity.jpg" alt="Avengers">
+          <div class="movie-details">
+            <h3>Avengers: Infinity War</h3>
+            <p><strong>Showtime:</strong> 6:00 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Nairobi</p>
+            <p><strong>Price:</strong> KSh 500</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie">
+          <img src="John Wick 4.jpg" alt="Inception">
+          <div class="movie-details">
+            <h3>Inception</h3>
+            <p><strong>Showtime:</strong> 8:30 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Mombasa</p>
+            <p><strong>Price:</strong> KSh 600</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="movie">
+          <img src="Black Panther.jpg" alt="Avengers">
+          <div class="movie-details">
+            <h3>Avengers: Infinity War</h3>
+            <p><strong>Showtime:</strong> 6:00 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Nairobi</p>
+            <p><strong>Price:</strong> KSh 500</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie">
+          <img src="Spider-Man.jpg" alt="Inception">
+          <div class="movie-details">
+            <h3>Inception</h3>
+            <p><strong>Showtime:</strong> 8:30 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Mombasa</p>
+            <p><strong>Price:</strong> KSh 600</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="movie">
+          <img src="infinity.jpg" alt="Avengers">
+          <div class="movie-details">
+            <h3>Avengers: Infinity War</h3>
+            <p><strong>Showtime:</strong> 6:00 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Nairobi</p>
+            <p><strong>Price:</strong> KSh 500</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie">
+          <img src="Spider-Man.jpg" alt="Inception">
+          <div class="movie-details">
+            <h3>Inception</h3>
+            <p><strong>Showtime:</strong> 8:30 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Mombasa</p>
+            <p><strong>Price:</strong> KSh 600</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="movie">
+          <img src="infinity.jpg" alt="Avengers">
+          <div class="movie-details">
+            <h3>Avengers: Infinity War</h3>
+            <p><strong>Showtime:</strong> 6:00 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Nairobi</p>
+            <p><strong>Price:</strong> KSh 500</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie">
+          <img src="John Wick 4.jpg" alt="Inception">
+          <div class="movie-details">
+            <h3>Inception</h3>
+            <p><strong>Showtime:</strong> 8:30 PM</p>
+            <p><strong>Theatre:</strong> StarFlix - Mombasa</p>
+            <p><strong>Price:</strong> KSh 600</p>
+            <button onclick="showBookingForm(this)">Book Now</button>
+            <form class="booking-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="number" placeholder="No. of Tickets" min="1" max="10" required />
+              <button type="submit" onclick="confirmBooking(event)">Confirm Booking</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Add more movie cards as needed -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function showBookingForm(button) {
+      const form = button.nextElementSibling;
+      form.style.display = form.style.display === "block" ? "none" : "block";
+    }
+
+    function confirmBooking(event) {
+      event.preventDefault();
+      const form = event.target.parentElement;
+      const name = form.querySelector('input[type="text"]').value;
+      const tickets = form.querySelector('input[type="number"]').value;
+      if (name && tickets) {
+        alert(`Thanks ${name}, your booking for ${tickets} ticket(s) is confirmed!`);
+        form.reset();
+        form.style.display = "none";
+      } else {
+        alert("Please fill all fields.");
+      }
+    }
+  </script>
+
+</body>
+</html>
